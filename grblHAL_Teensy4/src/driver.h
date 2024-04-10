@@ -101,6 +101,10 @@
 
 #ifdef BOARD_CNC_BOOSTERPACK
   #include "cnc_boosterpack_map.h"
+#elif defined(BOARD_VALAY_V7P6)
+  #include "valay_map_v7p6.h"
+#elif defined(BOARD_VALAY_V7P7)
+  #include "valay_map_v7p7.h"
 #elif defined(BOARD_T40X101)
   #include "T40X101_map.h"
 #elif defined(BOARD_T41U5XBB)
@@ -116,7 +120,7 @@
 #elif defined(BOARD_MY_MACHINE)
   #include "my_machine_map.h"
 #else // default board
-#include "generic_map.h"
+  #include "generic_map.h"
 #endif
 
 #if SPINDLE_PWM_PIN && !(SPINDLE_PWM_PIN == 12 || SPINDLE_PWM_PIN == 13)
