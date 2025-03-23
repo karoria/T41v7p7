@@ -99,6 +99,10 @@
 
 #ifdef BOARD_CNC_BOOSTERPACK
   #include "boards/cnc_boosterpack_map.h"
+#elif defined(BOARD_VALAY_V7P7)
+  #include "boards/valay_map_v7p7.h"
+#elif defined(BOARD_VALAY_V7P8)
+  #include "boards/valay_map_v7p8.h"
 #elif defined(BOARD_T40X101)
   #include "boards/T40X101_map.h"
 #elif defined(BOARD_T41U5XBB)
