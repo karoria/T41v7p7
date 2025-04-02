@@ -291,6 +291,9 @@ static gpio_t QEI_A, QEI_B;
 #ifdef AUXINPUT7_PIN
   static gpio_t AuxIn7;
 #endif
+#ifdef AUXINPUT8_PIN
+  static gpio_t AuxIn8;
+#endif
 
 #ifdef AUXOUTPUT0_PIN
   static gpio_t AuxOut0;
@@ -410,6 +413,9 @@ input_signal_t inputpin[] = {
 #endif
 #ifdef AUXINPUT7_PIN
   , { .id = Input_Aux7,           .port = &AuxIn7,         .pin = AUXINPUT7_PIN,       .group = PinGroup_AuxInput }
+#endif
+#ifdef AUXINPUT8_PIN
+  , { .id = Input_Aux8,           .port = &AuxIn8,         .pin = AUXINPUT8_PIN,       .group = PinGroup_AuxInput }
 #endif
 };
 

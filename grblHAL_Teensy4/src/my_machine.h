@@ -51,7 +51,7 @@ N_AXIS has a default value of 3, edit grbl\config.h to increase.
 
 */
 
-#define BOARD_VALAY_V7P7
+#define BOARD_VALAY_V7P8
 
 #ifndef USB_SERIAL_CDC
 #define USB_SERIAL_CDC         2 // 1 for Arduino class library and 2 for PJRC C library. Comment out or set to 0 to use UART communication.

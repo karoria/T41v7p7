@@ -90,30 +90,31 @@
 //#define COOLANT_MIST_PIN    (18u)
 
 // Define user-control CONTROLs (cycle start, reset, feed hold, door) input pins.
-#define RESET_PIN           (17u) // E-Stop
+#define RESET_PIN           (36u) // E-Stop
 #define FEED_HOLD_PIN       (40u) //was 37u in v7p7
 #define CYCLE_START_PIN     (39u) //was 38u in v7p7
 
 // Define auxillary input pins
 #define AUXINPUT0_PIN       (35u) //was 40u in v7p7
-#define AUXINPUT1_PIN       (36u) //was 34u in v7p7
+//#define AUXINPUT1_PIN       (36u) //was 34u in v7p7
 #define AUXINPUT2_PIN       (37u) //was 33u in v7p7
 #define AUXINPUT3_PIN       (38u)
-
-#define AUXINPUT4_PIN       (18u) // Probe
-#define AUXINPUT5_PIN       (15u) // Safety door
-#define AUXINPUT6_PIN       (16u) // Motor fault
+#define AUXINPUT4_PIN       (39u)
+#define AUXINPUT5_PIN       (40u)
+#define AUXINPUT6_PIN       (18u) // Probe
+#define AUXINPUT7_PIN       (15u) // Safety door
+#define AUXINPUT8_PIN       (16u) // Motor fault
 
 #if PROBE_ENABLE
-#define PROBE_PIN           AUXINPUT4_PIN //Assign like this, not pin number or it will not run
+#define PROBE_PIN           AUXINPUT6_PIN //Assign like this, not pin number or it will not run
 #endif
 
 #if SAFETY_DOOR_ENABLE
-#define SAFETY_DOOR_PIN     AUXINPUT5_PIN
+#define SAFETY_DOOR_PIN     AUXINPUT0_PIN
 #endif
 
 #if MOTOR_FAULT_ENABLE
-#define MOTOR_FAULT_PIN     AUXINPUT6_PIN
+#define MOTOR_FAULT_PIN     AUXINPUT8_PIN
 #endif
 
 #define AUXOUTPUT0_PIN      (28u) // Out1 //was 29u in v7p7
