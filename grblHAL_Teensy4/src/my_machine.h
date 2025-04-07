@@ -66,7 +66,7 @@ N_AXIS has a default value of 3, edit grbl\config.h to increase.
 // More here https://github.com/grblHAL/Plugins_spindle
 //#define SPINDLE0_ENABLE         SPINDLE_HUANYANG1
 //#define SPINDLE1_ENABLE         SPINDLE_PWM0
-//#define SPINDLE2_ENABLE         SPINDLE_NONE
+//#define SPINDLE2_ENABLE         SPINDLE_GS20
 //#define SPINDLE2_ENABLE         SPINDLE_NONE
 //#define SPINDLE_OFFSET          1 // Uncomment to enable settings for laser spindle XY-offset.
 // **********************
@@ -140,13 +140,13 @@ N_AXIS has a default value of 3, edit grbl\config.h to increase.
 #if ETHERNET_ENABLE || WEBUI_ENABLE
 //#define TELNET_ENABLE        1 // Telnet daemon - requires Ethernet streaming enabled.
 #define WEBSOCKET_ENABLE     1 // Websocket daemon - requires Ethernet streaming enabled.
-#define MDNS_ENABLE          1 // mDNS daemon.
-#define SSDP_ENABLE          1 // SSDP daemon - requires HTTP enabled.
+//#define MDNS_ENABLE          1 // mDNS daemon.
+//#define SSDP_ENABLE          1 // SSDP daemon - requires HTTP enabled.
 //#define MQTT_ENABLE          1 // MQTT client API, only enable if needed by plugin code.
 #if SDCARD_ENABLE || WEBUI_ENABLE
 #define FTP_ENABLE           1 // Ftp daemon - requires SD card enabled
 #define HTTP_ENABLE          1 // http daemon - requires SD card enabled.
-#define WEBDAV_ENABLE        1 // webdav protocol - requires http daemon and SD card enabled.
+//#define WEBDAV_ENABLE        1 // webdav protocol - requires http daemon and SD card enabled.
 #endif
 // The following symbols have the default values as shown, uncomment and change as needed.
 #define NETWORK_HOSTNAME        "grblHAL"

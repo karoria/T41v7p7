@@ -96,7 +96,7 @@
 
 // Define auxillary input pins
 #define AUXINPUT0_PIN       (35u) //was 40u in v7p7
-//#define AUXINPUT1_PIN       (36u) //was 34u in v7p7
+#define AUXINPUT1_PIN       (36u) //was 34u in v7p7
 #define AUXINPUT2_PIN       (37u) //was 33u in v7p7
 #define AUXINPUT3_PIN       (38u)
 #define AUXINPUT4_PIN       (39u)
@@ -110,7 +110,7 @@
 #endif
 
 #if SAFETY_DOOR_ENABLE
-#define SAFETY_DOOR_PIN     AUXINPUT0_PIN
+#define SAFETY_DOOR_PIN     AUXINPUT7_PIN
 #endif
 
 #if MOTOR_FAULT_ENABLE
